@@ -1,0 +1,10 @@
+Frontend : Next.js 14 (App Router), TypeScript, TailwindCSS, carte (MapLibre/Leaflet), Zustand (state)
+ou Redux Toolkit.
+Backend : Node.js 20, TypeScript, Express.js, Prisma ORM.
+DB : PostgreSQL 15 + PostGIS (géoloc), extension uuid-ossp .
+Temps réel : Socket.IO (ou Server‑Sent Events si préféré).
+Stockage : S3‑compatible (Cloudflare R2 / AWS S3) via presigned URLs.
+Paiements : Stripe Payments (PaymentIntent) + Stripe Connect (Standard) pour reversements aux
+vendeurs; option Stripe Tax (sinon calcul maison TPS/TVQ).
+Infra : Docker Compose (dev), déploiement Vercel (front) + Railway/Fly.io/Render (back).
+Observabilité : pino logs JSON, Sentry, OpenTelemetry (optionnel).
